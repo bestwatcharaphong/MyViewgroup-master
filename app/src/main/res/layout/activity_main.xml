@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/liner1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+        </android.support.v4.view.ViewPager>
+
+
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <com.example.asus.myviewgroup.MyCustomview
+                android:id="@+id/btn_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+            </com.example.asus.myviewgroup.MyCustomview>
+
+            <com.example.asus.myviewgroup.MyCustomview
+                android:id="@+id/btn_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/btn_1"
+                android:layout_toRightOf="@+id/btn_1"></com.example.asus.myviewgroup.MyCustomview>
+
+            <com.example.asus.myviewgroup.MyCustomview
+                android:id="@+id/btn_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/btn_2"
+                android:layout_toRightOf="@+id/btn_2"></com.example.asus.myviewgroup.MyCustomview>
+
+            <com.example.asus.myviewgroup.MyCustomview
+                android:id="@+id/btn_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/btn_3"
+                android:layout_toRightOf="@+id/btn_3"></com.example.asus.myviewgroup.MyCustomview>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
